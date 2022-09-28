@@ -1,0 +1,29 @@
+% File: pre/title.tex
+% -----------------------------------------------------------------------------
+\newgeometry {
+    left = 20mm, right = 20mm, top = 20mm, bottom = 30mm % Define a new geometry for the title page only
+}
+
+\begin{figure}[h!]
+    \centering \includegraphics[width = 0.25\linewidth]{img/uni-logo.pdf}
+\end{figure}
+
+\vspace{-10em}
+
+\vfill
+
+\begin{center}
+    \textbf{{\LARGE {Title of the dissertation}}}
+\end{center}
+
+\vfill
+
+\hfill \begin{minipage}{0.35\textwidth}
+\noindent \textbf{University of Oulu} \newline
+Information Processing Science        \newline
+< Dissertation Type/Name >            \newline
+< Firstname Lastname >                \newline
+< Year >
+\end{minipage}
+
+\restoregeometry % Restore the geometry for the rest of the pages

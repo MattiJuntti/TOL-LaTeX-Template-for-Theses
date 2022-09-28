@@ -1,0 +1,33 @@
+%  File: cfg/packages.tex
+% -----------------------------------------------------------------------------
+% Set default page geometry.
+\usepackage [
+    top    = 25mm,
+    bottom = 20mm,
+    left   = 40mm,
+    right  = 20mm
+]{geometry}
+
+% Set default text to English. Used for naming TOC, section headers, etc.
+% Other languages are available. For more info about the 'babel' package,
+% see: https://ctan.org/pkg/babel
+\usepackage[english]{babel}                         
+
+% Packge for maintaining the 'references.bib' file, i.e. the database file
+% containing citations used in the document.
+\usepackage[backend = biber, style = apa]{biblatex}
+\addbibresource{references.bib}
+\usepackage{csquotes} % A dependency for the 'biblatex' package.
+
+% Rest of the packages. Add any package here as a new line, or outside the {}'s
+% by using the '\usepackage{<package name>}'. The latter option is usually
+% needed if package has some declaration options, like the 'geometry' package
+% above.
+\usepackage {
+    times     , % serif typeface - Times New Roman typeface for main text's typeface
+    helvet    , % sans-serif typeface - Helvetica is an Arial typeface replacement
+    fancyhdr  , % define header/footer options
+    titlesec  , % define section, subsec., and subsubsec. title formats
+    graphicx  , % more user friendly image support interface
+    setspace    % set line spacing
+}

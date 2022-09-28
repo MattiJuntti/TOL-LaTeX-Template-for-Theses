@@ -1,0 +1,27 @@
+% File: main.tex
+% -----------------------------------------------------------------------------
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+
+% Packages, configuration, etc.
+\input{cfg/packages.tex}          % LaTeX packages used for building a document
+\input{cfg/packages-settings.tex} % LaTeX packages settings file
+\input{cfg/document-settings.tex} % Extraneous settings; LaTeX builtin settings, etc.
+
+\begin{document}
+    \thispagestyle{empty} \input{pre/title.tex}
+    \newpage \input{pre/abstract.tex} \newpage
+    \newpage \input{pre/foreword.tex} \newpage
+
+    \tableofcontents \newpage
+
+    % Input sections
+    \input{sec/01-introduction.tex}
+    \input{sec/02-example-section.tex}
+
+    % References
+    \newpage \printbibliography[
+        heading = bibintoc,
+        title   = {References}
+    ]
+\end{document}
